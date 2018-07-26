@@ -47,7 +47,12 @@ public class ArrayMergeSort {
 		.map(Object::toString)
 		.sorted()
 		.forEach(System.out::println);
-			
+		
+		Integer abc	=	intList
+		.stream().reduce(1000, (x,y)->x+y);
+		
+		System.out.println("abc::"+abc);
+
 		
 		
 
