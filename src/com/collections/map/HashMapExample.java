@@ -20,6 +20,7 @@ public class HashMapExample {
 	       
 	       System.out.println(""+hashmap.size());
 	       
+	       
 	       for (String Val : hashmap.values()) {
 	    	   System.out.println("Val  ==="+Val);
 			

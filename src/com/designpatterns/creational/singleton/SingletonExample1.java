@@ -1,30 +1,30 @@
-package com.designpatterns;
+package com.designpatterns.creational.singleton;
 
 
 /**
  * @author pavankumarv
  * Private constructor <b>private SingletonExample2() {}</b> with public factory method
  * public static SingletonExample2 getSingletonInstance() {}
- * 
- * class is not final but we are not allowing to create child class, how it is possible.
- *declare every constructor as final
  *
- *Runtime class is internally implemented by using this approach
+ *Runtime class is internally implemented by using this approach but in public factory method added null condition.
  */
-public class SingletonExample2 {
+public class SingletonExample1 {
 	 
     // Static member holds only one instance of the
-    private static SingletonExample2 singletonInstance	=	new SingletonExample2();
+    private static SingletonExample1 singletonInstance	=	null;
     // private constructor
     // SingletonExample prevents any other class from instantiating
-    private SingletonExample2() {
+    private SingletonExample1() {
     }
  
     // It's a public factory method
     // Providing Global point of access
-    public static SingletonExample2 getSingletonInstance() {   
+    public static SingletonExample1 getSingletonInstance() {   
     
-        return singletonInstance;
+    	 if (null == singletonInstance) {
+             singletonInstance = new SingletonExample1();
+         }
+         return singletonInstance;
     }
  
     public void printSingleton(){

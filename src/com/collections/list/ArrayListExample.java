@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayListExample {
 	   public static void main(String args[]) {
-	      /*Creation of ArrayList: I'm going to add String
-	       *elements so I made it of string type */
+	      /*Creation of ArrayList: I'm going to add String elements, so I made it of generic as string type */
 		  ArrayList<String> obj = new ArrayList<String>();
 
 		  /*This is how elements should be added to the array list*/

@@ -27,7 +27,7 @@ public class WeakHashMapTest {
 		keyhashmap = null;
 		keyweakhashmap = null;
 		System.gc();
-		System.out.println("Afete: hash map value:"+hashmap.get("keyhashmap")+" and weak hash map value:"+weakhashmap.get("keyweakhashmap"));
+		System.out.println("After: hash map value:"+hashmap.get("keyhashmap")+" and weak hash map value:"+weakhashmap.get("keyweakhashmap"));
 		
 		//for ref http://www.concretepage.com/java/example_weakhashmap
 

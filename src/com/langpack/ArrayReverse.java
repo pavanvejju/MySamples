@@ -14,6 +14,7 @@ public class ArrayReverse {
 	public static int[] reverse(){
 		
 		int[] arr	=	{1,2,3,4,5};
+		
 		int temp;
 		for(int i=0;i<arr.length/2;i++){
 				temp	=	arr[i];
@@ -24,4 +25,6 @@ public class ArrayReverse {
 		return arr;
 	}
 
+	
+	
 }

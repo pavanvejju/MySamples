@@ -1,5 +1,7 @@
 package com.langpack;
 
+import java.util.Arrays;
+
 public class FindMaxInArray {
 
 	/**
@@ -21,5 +23,8 @@ public class FindMaxInArray {
 			}
 		}
 		System.out.println("The largest number you entered was: " + biggestnumber);
+		
+		System.out.println(">>>"+Arrays.stream(array).reduce(Math::max).getAsInt());
+		
 	}
 }

@@ -16,7 +16,14 @@ public class RemoveDuplicatesFromList {
 		duplicateList.add("good");
 		duplicateList.add("good");
 		duplicateList.add("very");
-
+		
+		System.out.println("Remove duplicates");
+		duplicateList.stream().distinct().forEach(i->System.out.println(i));
+		System.out.println("Remove duplicates");
+		new HashSet<String>(duplicateList).stream().forEach(i->System.out.println(i+"=="+Collections.frequency(duplicateList, i)));
+		
+		
+System.out.println("Above output is from java8");
 		//Converting ArrayList to HashSet to remove duplicates
 		HashSet<String> hashSet=new HashSet<String>(duplicateList);
 		System.out.println("duplicateList  size========"+duplicateList.size());

@@ -12,9 +12,12 @@ public class MapPut {
 		m.put("2", 5);
 		m.put(null, 4);
 		m.put(null, 5); // accepting null keys
+		
 		System.out.println(m.put("2", 1));
 		System.out.println(m.put("1", 1));  // previous key-value will return
 		System.out.println(m);
+		
+		
 	}
 
 }

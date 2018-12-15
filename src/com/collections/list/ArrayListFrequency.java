@@ -37,6 +37,13 @@ public class ArrayListFrequency {
 			// frequency  means nothing but count
 			System.out.println(t+":"+Collections.frequency(list, t));
 		}
+		System.out.println("===============================================");
+	// java 8
+		set.stream().forEach(i-> 
+		{	
+			System.out.println(i+":::"+Collections.frequency(list, i));
+		});	
+			
 		
 		
 	}

@@ -1,5 +1,10 @@
 package com.langpack;
 
+import java.util.Arrays;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class StringReverse
 {
     static int i,c=0,res;
@@ -19,5 +24,6 @@ public class StringReverse
     public static void main (String args[])
     {
         StringReverse.stringreverse(" manchester united is also known as red devil ");
+        
     }
 }
