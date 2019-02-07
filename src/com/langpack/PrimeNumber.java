@@ -5,7 +5,7 @@ package com.langpack;
  *
  */
 
-public class PrimaryNumber {
+public class PrimeNumber {
 	
 	
 	public static void main(String[] args) {

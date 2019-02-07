@@ -47,8 +47,9 @@ public class StreamBuilders {
 		  System.out.println("5B) Using String tokens");
 			
 		  Stream<String> stream = Stream.of("A$D$C".split("\\$"));
-	        stream.sorted().forEach(p -> System.out.println(p));
-		
+	        //stream.sorted().forEach(p -> System.out.println(p));
+	        stream.sorted().forEach(System.out::println);
+	        
 	}
 
 }

@@ -22,13 +22,9 @@ public class MatrixDiagonal {
 	
 	public static int isDiagonal(int mat[][], int r, int c) {
 		
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<c;j++) {
-				// print matrix
-				System.out.println(mat[i][j]);
-			}
-			 System.out.println();
-		}
+		// for printing the matrix in console
+		printConsole(mat,3,3);
+		
 		int flag=0;
 		for(int i=0;i<r;i++) {
 			for(int j=0;j<c;j++) {
@@ -47,6 +43,18 @@ public class MatrixDiagonal {
 			}
 		}
 		return flag;
+	}
+	
+	public static void printConsole(int mat[][], int r, int c) {
+		System.out.println("Given input is ");
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				// print matrix
+				System.out.print(mat[i][j] + " ");
+			}
+			 System.out.print("\n");
+		}
+		 System.out.println("=============");
 	}
 	
 

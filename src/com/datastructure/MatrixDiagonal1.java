@@ -35,6 +35,7 @@ public class MatrixDiagonal1 {
 			}
 			 System.out.print("\n");
 		}
+		System.out.println("=============");
 	}
 	
 	public static int min(int a, int b) {
