@@ -6,11 +6,10 @@ import java.util.stream.IntStream;
 public class IntStreamRangeReduceExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		String[] strarray	=	{ "this", "is", "a", "sentence" };
 		
-		System.out.println(Arrays.stream(strarray).reduce(">>>", (str1,str2)->str1+str2));
+		System.out.println(Arrays.stream(strarray).reduce(">>>", (str1,str2)->str1+" "+str2));
 		
 		System.out.println( IntStream.rangeClosed(2, 4).reduce((num1, num2)-> num1*num2));
 	//	System.out.println( IntStream.rangeClosed(2, 4).boxed().map(num1 ->num1*2).collect(Collectors.toList()));

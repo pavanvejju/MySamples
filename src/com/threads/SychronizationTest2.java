@@ -6,19 +6,19 @@ package com.threads;
           // if(Thread.currentThread().getName().equals("Thread-1"))
                   method1();
           // else
-                  method2();
+                  method2(); 
     }
  
     synchronized void method1(){
            System.out.println(Thread.currentThread().getName()+
-                        " in static synchronized void method1() started");
+                        " in  synchronized void method1() started");
            try {
                   Thread.sleep(2000);
            } catch (InterruptedException e) {
                   e.printStackTrace();
            }
            System.out.println(Thread.currentThread().getName()+
-                        " in static synchronized void method1() ended");
+                        " in  synchronized void method1() ended");
     }
     
     synchronized void method2(){
@@ -38,10 +38,10 @@ package com.threads;
 public class SychronizationTest2 {
     public static void main(String args[]) throws InterruptedException{
            
-           MyRunnable3 myRunnable1=new MyRunnable3();
+           MyRunnable4 myRunnable=new MyRunnable4();
            
-           Thread thread1=new Thread(myRunnable1,"Thread-1");
-           Thread thread2=new Thread(myRunnable1,"Thread-2");
+           Thread thread1=new Thread(myRunnable,"Thread-1");
+           Thread thread2=new Thread(myRunnable,"Thread-2");
            thread1.start();        
            thread2.start();        
            

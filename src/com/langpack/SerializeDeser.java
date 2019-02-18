@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
  
-class MyClass1 {}
+class MyClass1  {}
  
 class Employee implements Serializable {
     

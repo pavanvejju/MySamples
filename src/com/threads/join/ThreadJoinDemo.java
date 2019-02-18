@@ -17,7 +17,6 @@ public class ThreadJoinDemo {
 					
 					// System.out.println(ex.printStackTrace());
 					ex.printStackTrace();
-					
 				}
 			}
 		};
